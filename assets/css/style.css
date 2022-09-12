@@ -27,15 +27,30 @@ body{
 }
 
 .margin_t_b{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .margin_t{
     margin-top: 60px;
 }
 
-.flex{
+.margin_b{
+    margin-bottom: 20px;
+}
+
+.flex_row{
     display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.col_1{
+    width: calc(100% / 12 * 2 );
+}
+
+.col_2{
+    width: calc(100% / 12 * 10 );
+
 }
 /*#endregion utility*/
 
@@ -139,8 +154,18 @@ button a{
     margin-bottom: 80px;
 }
 
+.circle{
+    vertical-align:middle ;
+    display: inline-block;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
 .plane>span{
     margin-right: 3rem;
+    vertical-align:middle;
 }
 
 .trial_row{
@@ -155,8 +180,7 @@ button a{
 }
 
 .contract_container{
-    width: 80%;
-    margin: auto;
+    padding: 1rem;
 }
 
 .text{
@@ -185,17 +209,6 @@ button a{
     border-bottom: 1px solid black;
     padding-bottom: 30px;
     margin-bottom: 60px;
-}
-
-.check{
-    margin: 20px 0px;
-}
-
-.check::before{
-    content: "\2713";
-    color: var(--bg_button);
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 /*#endregion business*/

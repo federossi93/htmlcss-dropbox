@@ -61,68 +61,99 @@
         <section id="business_container">
             <div class="plane">
                 <h2>Trova il piano business che fa per te</h2>
-                <span>
-                    <input type="checkbox"> Fatturazione mensile
-                </span>
-                <span>
-                    <input type="checkbox"> Fatturazione annuale
-                </span>
+                    <div class="circle"></div>
+                    <span>Fatturazione mensile</span> 
+                <div class="circle"></div>
+                <span>Fatturazione mensile</span>
             </div>
-
+            <!--PROFESSIONAL-->
             <div class="trial_row">
                 <div class="contract">
-                    <div class="text"><i class="fa-solid fa-user"></i>singolo</div>
+                    <div class="text"><i class="fa-solid fa-user"></i> singolo</div>
                     <div class="contract_container">
                         <h3>Professional</h3>
                         <div class="bold">€ 12.00</div>
                         <div class="margin_t_b">/mese</div>
-                        <div class="margin_t"><i class="fa-solid fa-user"></i> 1 utente</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-diagram-project"></i>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                        <div class="flex_row margin_t">
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-user"></i></div>
+                            <div class="col_2 margin_t_b">1 utente</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-folder"></i></i></div>
+                            <div class="col_2 margin_t_b">5 TB di spazio di archiviazione sicuro</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="col_2 margin_t_b">Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                        </div>
                         <button><a href="">Prova gratis per 30 giorni</a></button>
                         <div><span>oppure</span><a class="color_blue" href=""> acquista ora</a></div>
-                        <div class="bold">punti salienti del piano</div>
-                        <div class="check">invia file fino a 100gb con Dropbox Tranfert</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
+                        <div class="bold marginb">punti salienti del piano</div>
+                        <div class="flex_row">
+                            <div class="col_1 margin_t_b font_s_1 color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">invia file fino a 100gb con Dropbox Tranfert</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Cartelle offline su dispositivi mobili</div>
+                        </div>
+                    </div>
+                </div>
+                <!--ADVANCED-->
+                <div class="contract">
+                    <div class="text"><i class="fa-solid fa-users"></i> Team</div>
+                    <div class="contract_container">
+                        <h3>Advanced</h3>
+                        <div class="bold">€ 18.00</div>
+                        <div class="margin_t_b">/utente/mese</div>
+                        <div class="flex_row margin_t">
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-users"></i></div>
+                            <div class="col_2 margin_t_b">3 o più utenti</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-folder"></i></i></div>
+                            <div class="col_2 margin_t_b">Tutto lo spazio di cui ha bisogno il tuo team</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="col_2 margin_t_b">Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                        </div>
+                        <button><a href="">Prova gratis per 30 giorni</a></button>
+                        <div><span>oppure</span><a class="color_blue" href=""> acquista ora</a></div>
+                        <div class="bold marginb">punti salienti del piano</div>
+                        <div class="flex_row">
+                            <div class="col_1 margin_t_b font_s_1 color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Nessun limite di spazio per i file</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Cartelle offline su dispositivi mobili</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Risparmio del 50% rispetto alle iscrizioni singole</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Possibilità di inserire nuovi membri del team</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Gestione del permessi in base ai ruoli</div>
+                        </div>
+                    </div>
+                </div>
+                <!--ENTERPRISE-->
+                <div class="contract">
+                    <div class="text"><i class="fa-solid fa-building"></i> Azienda</div>
+                    <div class="contract_container">
+                        <h3>Enterprise</h3>
+                        <div class="bold">Contattaci</div>
+                        <div class="margin_t_b">-</div>
+                        <div class="flex_row margin_t">
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-user"></i></div>
+                            <div class="col_2 margin_t_b">10 o più utenti</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-folder"></i></i></div>
+                            <div class="col_2 margin_t_b">Soluzioni personalizzabili per la tua azienda</div>
+                            <div class="col_1 margin_t_b"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="col_2 margin_t_b">Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
+                        </div>
+                        <button><a href="">Prova gratis per 30 giorni</a></button>
+                        <div><span>oppure</span><a class="color_blue" href=""> acquista ora</a></div>
+                        <div class="bold marginb">punti salienti del piano</div>
+                        <div class="flex_row">
+                            <div class="col_1 margin_t_b font_s_1 color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Cartelle offline su dispositivi mobili</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Servizio assistenza 24/h</div>
+                            <div class="col_1 margin_t_b color_blue"><i class="fa-solid fa-check"></i></div>
+                            <div class="col_2 margin_t_b">Possibilità di personalizzazione totale</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contract">
-                    <div class="text"><i class="fa-solid fa-user"></i>singolo</div>
-                    <div class="contract_container">
-                        <h3>Professional</h3>
-                        <div class="bold">€ 12.00</div>
-                        <div class="margin_t_b">/mese</div>
-                        <div class="margin_t"><i class="fa-solid fa-user"></i> 1 utente</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-diagram-project"></i>Funzioni di produttività premium e condivisione file semplice e sicura</div>
-                        <button><a href="">Prova gratis per 30 giorni</a></button>
-                        <div><span>oppure</span><a class="color_blue" href=""> acquista ora</a></div>
-                        <div class="bold">punti salienti del piano</div>
-                        <div class="check">invia file fino a 100gb con Dropbox Tranfert</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
-                    </div>
-                </div>
-
-                <div class="contract">
-                    <div class="text"><i class="fa-solid fa-user"></i>singolo</div>
-                    <div class="contract_container">
-                        <h3>Professional</h3>
-                        <div class="bold">€ 12.00</div>
-                        <div class="margin_t_b">/mese</div>
-                        <div class="margin_t"><i class="fa-solid fa-user"></i> 1 utente</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-folder"></i> 5 TB di spazio di archiviazione sicuro</div>
-                        <div class="margin_t_b"><i class="fa-solid fa-diagram-project"></i>Funzioni di produttività premium e condivisione file semplice e sicura</div>
-                        <button><a href="">Prova gratis per 30 giorni</a></button>
-                        <div><span>oppure</span><a class="color_blue" href=""> acquista ora</a></div>
-                        <div class="bold">punti salienti del piano</div>
-                        <div class="check">invia file fino a 100gb con Dropbox Tranfert</div>
-                        <div class="check">Cartelle offline su dispositivi mobili</div>
-                    </div>
-                </div>
         </section>
         
         <!--enterprise-->
