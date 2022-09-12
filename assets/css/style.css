@@ -18,6 +18,21 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.color_blue{
+    color: var(--bg_button);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.margin_t_b{
+    margin: 20px 0px;
+}
+
+.margin_t{
+    margin-top: 60px;
+}
 /*#endregion utility*/
 
 
@@ -104,17 +119,76 @@ button a{
 
 .jumbo_img{
     width: calc(100% / 12 * 8);
-
 }
 
 /*Section business*/
 
 #business_container{
     width: 50%;
-    margin: 200px auto;
+    margin: 150px auto;
 }
 
 .plane h2{
     font-size: 2.5rem;
+    margin-bottom: 80px;
+}
+
+.plane>span{
+    margin-right: 3rem;
+}
+
+.trial_row{
+    display: flex;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.contract{
+    width: calc(100% / 12 * 4);
+    border: 1px solid black;
+}
+
+.contract_container{
+    width: 80%;
+    margin: auto;
+}
+
+.text{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+}
+
+.contract h2{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.contract button{
+    background-color: var(--bg_button);
+    padding: 0.5rem 1rem;
+    border: none;
+    display: block;
+    margin: 1.5rem auto;
+    
+}
+
+.contract span{
+    display: inline-block;
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+
+.check{
+    margin: 20px 0px;
+}
+
+.check::before{
+    content: "\2713";
+    color: var(--bg_button);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 /*#endregion main*/
