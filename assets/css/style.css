@@ -33,6 +33,10 @@ body{
 .margin_t{
     margin-top: 60px;
 }
+
+.flex{
+    display: flex;
+}
 /*#endregion utility*/
 
 
@@ -73,7 +77,7 @@ button a{
 
 /*#endregion navbar*/
 
-/*#region main*/
+/*#region jumbo*/
 
 #jumbo_bg{
     background-color: var(--jumbo);
@@ -121,7 +125,9 @@ button a{
     width: calc(100% / 12 * 8);
 }
 
-/*Section business*/
+/*#endregion jumbo*/
+
+/*#region business*/
 
 #business_container{
     width: 50%;
@@ -159,7 +165,7 @@ button a{
     padding: 0.5rem;
 }
 
-.contract h2{
+.contract h3{
     margin-top: 30px;
     margin-bottom: 20px;
     
@@ -191,4 +197,95 @@ button a{
     font-size: 1.5rem;
     font-weight: bold;
 }
-/*#endregion main*/
+
+/*#endregion business*/
+
+/*region enterprise*/
+
+.enterprice{
+    width: 50%;
+    margin: auto;
+}
+
+.enterprice_container{
+    border: 1px solid black;
+}
+
+.icon_team{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+}
+
+.e_contact{
+    width: calc(100% / 12 * 8);
+    margin-left: 2rem;
+}
+
+.e_button{
+    width: calc(100% / 12 * 4);
+}
+
+.enterprice button{
+    background-color: var(--bg_button);
+    padding: 0.5rem 1rem;
+    border: none;
+    display: block;
+    margin: 1.5rem auto;
+    
+}
+
+.enterprice_container h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.enterprice_container p{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*sezione partner*/
+
+.partner{
+    width: 50%;
+    margin: auto;
+}
+.row_partner{
+    margin-top: 150px;
+    display: flex;
+}
+
+.partner_img img{
+    width: 100%;
+}
+
+.partner_img{
+    width: calc(100% / 12 * 7);
+}
+
+.contact_partner{
+    width: calc(100% / 12 * 5);
+    padding: 2rem;
+}
+
+.contact_partner h3{
+    font-size: 1.5rem;
+}
+.contact_partner p{
+    margin-top: 1rem;
+}
+
+.contact_partner button{
+    padding: 0.5rem;
+    background-color: var(--bg_page);
+    margin-top: 2rem;
+}
+
+/*endregion enterprise*/
+
+
+
+
+
