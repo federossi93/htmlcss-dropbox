@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*#region utility*/
+
+:root{
+    --bg_footer: #000000;
+    --bg_button: #0061FF;
+    --jumbo: #B4D0E7;
+    --bg_designit: #F5F5F5;
+    --bg_page: #FFFFFF;
+}
+
+/*#endregion utility*/
