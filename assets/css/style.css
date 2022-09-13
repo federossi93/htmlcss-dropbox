@@ -44,13 +44,32 @@ body{
     
 }
 
-.col_1{
-    width: calc(100% / 12 * 2 );
+.flex{
+    display: flex;
 }
 
-.col_2{
-    width: calc(100% / 12 * 10 );
+.col_1{
+    width: calc(100% / 12 * 1 );
+}
 
+.col_6{
+    width: calc(100% / 12 * 6 );
+    display: flex;
+    justify-content: center;
+}
+
+.col_11{
+    width: calc(100% / 12 * 11 );
+}
+
+.col_4_gap{
+    width: calc(100% / 12 * 4 - 2rem);
+}
+
+.col_4{
+    width: calc(100% / 12 * 4 );
+    display: flex;
+    flex-wrap: wrap;
 }
 /*#endregion utility*/
 
@@ -265,6 +284,7 @@ button a{
     width: 50%;
     margin: auto;
 }
+
 .row_partner{
     margin-top: 150px;
     display: flex;
@@ -286,6 +306,7 @@ button a{
 .contact_partner h3{
     font-size: 1.5rem;
 }
+
 .contact_partner p{
     margin-top: 1rem;
 }
@@ -299,6 +320,64 @@ button a{
 /*endregion enterprise*/
 
 
+/*#region business*/
+.drop_business{
+    width: 50%;
+    margin: auto;
+}
+
+.drop_business h2{
+    font-size: 2.5rem;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+.drop_business img{
+    width: 100%;
+}
+
+.flex_drop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.col_4 h3{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+/*#endregion business*/
+
+/*#region user*/
+
+
+.designit{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.title_user{
+    width: 50%;
+    margin: auto;
+}
+
+.title_user h2{
+    font-size: 2.5rem;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+}
+
+.designit img{
+    width: 100%;
+} 
+
+
+
+
+/*#endregion user*/
 
 
 
