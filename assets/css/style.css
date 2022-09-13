@@ -62,6 +62,11 @@ body{
     justify-content: space-between;
 }
 
+.flex_ar{
+    display: flex;
+    justify-content: space-around;
+}
+
 .col_1{
     width: calc(100% / 12 * 1 );
 }
@@ -506,6 +511,7 @@ button a{
 .frequent_request{
     width: 50%;
     margin: auto;
+    margin-bottom: 150px;
 }
 
 .frequent_request h2{ 
@@ -523,3 +529,37 @@ button a{
     margin-right: 2rem;
 }
 /*#endregion agency*/
+
+/*footer*/
+
+#site_footer{
+    background-color: var(--bg_footer);
+}
+
+.footer_text{
+    color: var(--bg_designit);
+    margin-top: 100px ;
+}
+
+.footer_text h3{
+    margin-bottom: 30px;
+}
+
+.footer_text ul{
+    list-style: none;
+}
+
+.footer_text li{
+    margin: 10px 0px;
+}
+
+.footer_text a{
+    color: var(--bg_designit);
+    text-decoration: none;
+}
+
+.region{
+    margin: 60px 0px;
+    border-top: 1px solid var(--bg_designit);
+    padding-top: 30px;
+}
