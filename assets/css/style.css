@@ -51,11 +51,15 @@ body{
 .flex_row{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .flex{
     display: flex;
+}
+
+.flex_bw{
+    display: flex;
+    justify-content: space-between;
 }
 
 .col_1{
@@ -82,7 +86,7 @@ body{
     width: calc(100% / 12 * 4 - 2rem);
 }
 
-.col_4{
+.stikers{
     width: calc(100% / 12 * 4 );
     display: flex;
     flex-wrap: wrap;
@@ -248,7 +252,7 @@ button a{
 
 /*#endregion business*/
 
-/*region enterprise*/
+/*#region enterprise*/
 
 .enterprice{
     width: 50%;
@@ -333,7 +337,7 @@ button a{
     margin-top: 2rem;
 }
 
-/*endregion enterprise*/
+/*#endregion enterprise*/
 
 
 /*#region business*/
@@ -371,7 +375,6 @@ button a{
 
 .designit{
     margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 .title_user{
@@ -470,6 +473,7 @@ button a{
     background-color: var(--bg_hearts);
     padding-top:100px;
     padding-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .agency h2{
@@ -497,3 +501,25 @@ button a{
 }
 /*#endregion agency*/
 
+/*#region agency*/
+
+.frequent_request{
+    width: 50%;
+    margin: auto;
+}
+
+.frequent_request h2{ 
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.request{
+    padding: 30px 0px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.arrow_down{
+    margin-right: 2rem;
+}
+/*#endregion agency*/
