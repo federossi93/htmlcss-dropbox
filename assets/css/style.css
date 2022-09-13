@@ -62,8 +62,16 @@ body{
     width: calc(100% / 12 * 1 );
 }
 
+.col_5{
+    width: calc(100% / 12 * 5 );
+}
+
 .col_6{
     width: calc(100% / 12 * 6 );
+}
+
+.col_7{
+    width: calc(100% / 12 * 7 );
 }
 
 .col_11{
@@ -405,6 +413,7 @@ button a{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 #cred{
     margin-bottom: 100px;
 }
@@ -455,5 +464,36 @@ button a{
 
 /*#endregion user*/
 
+/*#region agency*/
 
+.agency{
+    background-color: var(--bg_hearts);
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+
+.agency h2{
+    font-size: 2.5rem;
+}
+
+.margin_a50{
+    width:50%;
+    margin: auto;
+}
+
+.flex_b{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.t_end{
+    padding: 0.5rem 2rem;
+    border: none;
+}
+
+.t_end a{
+    color: var(--bg_footer);
+}
+/*#endregion agency*/
 
