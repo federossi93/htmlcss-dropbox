@@ -12,6 +12,16 @@
     --jumbo: #B4D0E7;
     --bg_designit: #F5F5F5;
     --bg_page: #FFFFFF;
+    --bg_florida: #0093CE;
+    --bg_lonely: #0D2481;
+    --bg_asu: #61082B;
+    --bg_des: #A2D39B;
+    --bg_hearts: #B4D0E7;
+    --bg_pad_des: #D1E9CD;
+    --bg_word: #D5001F;
+    --bg_topps: #FF1C1C;
+    --bg_clear: #FFD830;
+
 }
 
 body{
@@ -54,8 +64,6 @@ body{
 
 .col_6{
     width: calc(100% / 12 * 6 );
-    display: flex;
-    justify-content: center;
 }
 
 .col_11{
@@ -370,12 +378,80 @@ button a{
     
 }
 
-.designit img{
+.svg_pos{
+    width: 50%;
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+    fill: var(--bg_page);
+}
+
+.special{
     width: 100%;
-} 
+    
+}
 
+.des_company svg{
+    width: 50%;
+}
 
+.des_company span{
+    border-top: 1px solid black;
+    padding-top: 2rem;
+}
 
+.des_company p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#cred{
+    margin-bottom: 100px;
+}
+
+.box_1{
+    height: 250px;
+    position: relative;
+}
+
+.design{
+    border: 10px solid var(--bg_pad_des);
+    background-color: var(--bg_des);
+}
+
+.asu{
+    background-color: var(--bg_asu);
+}
+
+.florida{
+    background-color: var(--bg_florida);
+}
+
+.topps{
+    background-color: var(--bg_topps);
+}
+
+.world{
+    background-color: var(--bg_word);
+}
+
+.hearst{
+    background-color: var(--bg_hearts);
+}
+
+.lonely{
+    background-color: var(--bg_lonely);
+}
+
+.clear_c{
+    background-color: var(--bg_clear);
+}
+
+.des_company{
+    background-color: var(--bg_designit);
+    padding: 1rem 2rem;
+    height: 500px;
+}
 
 /*#endregion user*/
 
