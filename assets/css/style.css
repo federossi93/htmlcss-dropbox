@@ -118,7 +118,7 @@ nav a{
     box-shadow: 0 2px 10px 0 black;
 }
 
-.nav_bar li{
+.menu > li{
     list-style: none;
     padding: 1rem;
 }
@@ -150,7 +150,47 @@ nav a{
     color: black;
 }
 
+.has-children{
+    position: relative;
+}
 
+.sub_menu{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--bg_page);
+    box-shadow: 0 0 10px 0 black;
+    visibility: hidden;
+    margin-top: 60px;
+    width: 150px;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+}
+
+.sub_menu a{
+    color: black;
+}
+
+.sub_menu a:hover{
+    box-shadow: 0 2px 0 0 var(--bg_button);
+    transition: 0.7s;
+}
+
+.has-children:hover{
+    box-shadow: 0 0 10px 0 var(--bg_button);
+}
+
+.menu .has-children:hover .sub_menu{
+    transition: 0.5s;
+    margin-top: 10px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub_menu li{
+    padding: 1rem 0;
+}
 /*#endregion navbar*/
 
 /*#region jumbo*/
@@ -606,22 +646,23 @@ nav a{
 
 .request{
     padding: 2rem 0;
-    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
     font-weight: bold;
 }
 
 .request:hover{
-    border-bottom:none;
+    box-shadow: none;
 }
 
 .scomparsa{
-    display: none;
+    font-weight: bold;
+    visibility: hidden;
     padding-bottom: 0;
-    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
 }
 
 .request:hover +.scomparsa{
-    display: block;
+    visibility: visible;
     transition: 1s;
     padding-bottom: 2rem;
     font-weight: bold;
