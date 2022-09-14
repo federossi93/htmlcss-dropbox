@@ -24,6 +24,10 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -98,7 +102,6 @@ body{
 }
 /*#endregion utility*/
 
-
 /*#region navbar*/
 
 nav a{
@@ -109,7 +112,9 @@ nav a{
     display: flex;
     justify-content: space-between;
     background-color: var(--bg_page);
-    /*aggiungere position fixed*/
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .nav_bar li{
@@ -123,15 +128,21 @@ nav a{
     gap: 2rem;
 }
 
-#nav_button{
+.nav_button{
+    color: var(--bg_designit);
     background-color: var(--bg_button);
     padding: 0.5rem 1rem;
     border: none;
+    transition: 1s;
 }
 
-button a{
-    color: var(--bg_page);
-    text-decoration: none;
+.nav_button:hover{
+    color: var(--bg_button);
+    font-weight: 600;
+    box-shadow: 0 0 5px 0 black;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--bg_designit);
 }
 
 /*#endregion navbar*/
@@ -143,6 +154,7 @@ button a{
 }
 
 .container_jumbo{
+    padding-top: 150px;
     width: 60%;
     margin: auto;
 }
@@ -160,12 +172,23 @@ button a{
     width: calc(100% / 12 * 4);
 }
 
-.free_trial>button{
+.button_trial{
+    display: inline-block;
     background-color: var(--bg_button);
+    color: var(--bg_designit);
     padding: 0.5rem 1rem;
-    border: none;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    transition: 1.3s;
+}
+
+.button_trial:hover{
+    padding: 1rem 2rem;
+    border-radius: 0 4rem 0 4rem ;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 10px 2px rgb(0, 0, 0);
+    color: var(--bg_button);
+    background-color: var(--bg_designit);
 }
 
 .free_trial i{
@@ -175,9 +198,8 @@ button a{
 }
 
 .jumbo_img img{
-    width: 40%;
-    position: absolute;
-    /*valutare se la soluzione è corretta*/ 
+    width: 100%;
+    margin-bottom: -3rem; 
 }
 
 .jumbo_img{
@@ -206,6 +228,11 @@ button a{
     height: 20px;
     border-radius: 100%;
 }
+
+.circle:hover{
+    border: 3px solid var(--bg_button);
+}
+
 
 .plane>span{
     margin-right: 3rem;
@@ -239,13 +266,20 @@ button a{
     
 }
 
-.contract button{
+.button_ftrial{
+    color: var(--bg_designit);
     background-color: var(--bg_button);
     padding: 0.5rem 1rem;
     border: none;
     display: block;
     margin: 1.5rem auto;
-    
+    transition: 1s;
+}
+
+.button_ftrial:hover{
+    border-radius: 1rem;
+    background-color: var(--bg_des);
+    color: black;
 }
 
 .contract span{
@@ -283,13 +317,22 @@ button a{
     width: calc(100% / 12 * 4);
 }
 
-.enterprice button{
+.button_enterprice{
+    color: var(--bg_designit);
     background-color: var(--bg_button);
     padding: 0.5rem 1rem;
     border: none;
-    display: block;
+    display: inline-block;
     margin: 1.5rem auto;
+    transition: 1s;
     
+}
+
+.button_enterprice:hover{
+    color: var(--bg_button);
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 1rem;
+    background-color: var(--bg_designit);
 }
 
 .enterprice_container h3{
@@ -373,6 +416,22 @@ button a{
     margin-bottom: 25px;
 }
 
+.button_partner{
+    margin-top: 3rem;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: #e4e4e4;
+    border:1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.button_partner:hover{
+    color: var(--bg_button);
+    box-shadow: 0 0 10px 0 var(--bg_button);
+    border: none;
+    border-radius: 1rem;
+}
 /*#endregion business*/
 
 /*#region user*/
@@ -496,13 +555,26 @@ button a{
     align-items: center;
 }
 
-.t_end{
-    padding: 0.5rem 2rem;
-    border: none;
-}
+
 
 .t_end a{
     color: var(--bg_footer);
+}
+
+.button_agency{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    background-color: #e4e4e4;
+    border:1px solid black;
+    color: black;
+    transition: 0.5s;
+}
+
+.button_agency:hover{
+    color: var(--bg_button);
+    box-shadow: 0 0 10px 0 var(--bg_button);
+    border: none;
+    border-radius: 1rem;
 }
 /*#endregion agency*/
 
@@ -530,7 +602,7 @@ button a{
 }
 /*#endregion agency*/
 
-/*footer*/
+/*#region footer*/
 
 #site_footer{
     background-color: var(--bg_footer);
@@ -563,3 +635,5 @@ button a{
     border-top: 1px solid var(--bg_designit);
     padding-top: 30px;
 }
+
+/*#endregion footer*/
