@@ -119,11 +119,11 @@ nav a{
 }
 
 .nav_bar li{
-    display: inline-block;
+    list-style: none;
     padding: 1rem;
 }
 
-.nav_bar ul{
+.menu{
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -149,6 +149,8 @@ nav a{
 .arrow{
     color: black;
 }
+
+
 /*#endregion navbar*/
 
 /*#region jumbo*/
@@ -446,7 +448,7 @@ nav a{
 }
 /*#endregion business*/
 
-/*#region user*/
+/*#region designit*/
 
 
 .designit{
@@ -475,8 +477,7 @@ nav a{
 }
 
 .special{
-    width: 100%;
-    
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(89deg) brightness(102%) contrast(101%);
 }
 
 .des_company svg{
@@ -541,7 +542,7 @@ nav a{
     height: 500px;
 }
 
-/*#endregion user*/
+/*#endregion designit*/
 
 /*#region agency*/
 
@@ -614,14 +615,16 @@ nav a{
 }
 
 .scomparsa{
-    font-weight: bold;
     display: none;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     border-bottom: 1px solid black;
 }
 
 .request:hover +.scomparsa{
     display: block;
+    transition: 1s;
+    padding-bottom: 2rem;
+    font-weight: bold;
 }
 
 .arrow_down{
