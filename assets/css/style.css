@@ -524,10 +524,6 @@ nav a {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(89deg) brightness(102%) contrast(101%);
 }
 
-.des_company svg {
-    width: 50%;
-}
-
 .des_company span {
     border-top: 1px solid black;
     padding-top: 2rem;
@@ -543,8 +539,8 @@ nav a {
 }
 
 .box_1 {
-    height: 250px;
     position: relative;
+    aspect-ratio: 1/1;
 }
 
 .design {
@@ -583,7 +579,6 @@ nav a {
 .des_company {
     background-color: var(--bg_designit);
     padding: 1rem 2rem;
-    height: 500px;
 }
 
 /*#endregion designit*/
